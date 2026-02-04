@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   & h1 {
     max-width: 40rem;
@@ -130,8 +130,9 @@
       right: 0;
       bottom: 35%;
 
-      transform: translateX(400%);
-      animation: slideIn 2.2s 800ms ease both;
+      opacity: 0;
+      transform: translateX(600%);
+      animation: slideIn 2.2s 800ms ease both, appear 100ms 800ms both;
     }
   }
 }
